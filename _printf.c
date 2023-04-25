@@ -11,13 +11,13 @@ int _printf(const char *format, ...)
 	int s_rv = 0;
 	va_list newlist;
 
+	if (format == NULL)
+	{
+		return (-1);
+	}
 	va_start(newlist, format);
 	for (index = 0; format[index] != '\0'; index++)
 	{
-		if (format == 0)
-		{
-			return (-1);
-		}
 		if (format[index] != '%')
 		{
 			_putchar(format[index]);
