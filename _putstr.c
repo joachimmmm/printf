@@ -13,11 +13,11 @@ int _putstr(char *str)
 	if (str)
 	{
 		while (str[strindex] != '\0')
-			{
-				_putchar(str[strindex]);
-				strcount++;
-				strindex++;
-			}
+		{
+			_putchar(str[strindex]);
+			strcount++;
+			strindex++;
+		}
 	}
 	return (strcount);
 }
