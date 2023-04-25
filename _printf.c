@@ -14,6 +14,10 @@ int _printf(const char *format, ...)
 	va_start(newlist, format);
 	for (index = 0; format[index] != '\0'; index++)
 	{
+		if (format == 0)
+		{
+			return (-1);
+		}
 		if (format[index] != '%')
 		{
 			_putchar(format[index]);
@@ -33,7 +37,6 @@ int _printf(const char *format, ...)
 		{
 			_putchar('%');
 			index++;
-			rv++;
 		}
 		else
 		{
