@@ -26,8 +26,8 @@ int _printf(const char *format, ...)
 		else if (format[index + 1] == 's')
 		{
 			s_rv = _putstr(va_arg(newlist, char *));
-			index++;
 			rv += (s_rv - 1);
+			index++;
 		}
 		else if (format[index + 1] == '%')
 		{
