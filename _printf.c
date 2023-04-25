@@ -1,14 +1,18 @@
 #include "main.h"
+/**
+ * _printf - printf func
+ * @format: str format
+ * Return: the str
+ */
 
 int _printf(const char *format, ...)
 {
 	unsigned int index;
 	unsigned int rv = 0;
 	int s_rv = 0;
-	
 	va_list newlist;
+
 	va_start(newlist, format);
-	
 	for (index = 0; format[index] != '\0'; index++)
 	{
 		if (format[index] != '%')
