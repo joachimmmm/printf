@@ -8,8 +8,8 @@
 
 int _putchar(char j);
 
-void print_buffer(char buffer[], int *buffer_index);
+int _putstr(char *str);
 
-void _printf(const char *format, ...);
+int _printf(const char *format, ...);
 
 #endif
