@@ -7,4 +7,6 @@ int main(void)
 	int f;
 
 	f = _printf("%s", teststr);
+	printf("f is %d", f);
+	return (0);
 }
