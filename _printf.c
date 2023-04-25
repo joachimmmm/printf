@@ -7,8 +7,7 @@
 
 int _printf(const char *format, ...)
 {
-	unsigned int index;
-	unsigned int rv = 0;
+	unsigned int index, rv = 0;
 	int s_rv = 0;
 	va_list newlist;
 

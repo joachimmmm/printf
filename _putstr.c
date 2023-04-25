@@ -7,15 +7,16 @@
  */
 int _putstr(char *str)
 {
-	int strindex;
+	int strindex = 0;
 	int strcount = 0;
 
 	if (str)
 	{
-		for (strindex = 0; strindex != '\0'; strindex++)
+		while (str[strindex] != '\0')
 			{
 				_putchar(str[strindex]);
 				strcount++;
+				strindex++;
 			}
 	}
 	return (strcount);
