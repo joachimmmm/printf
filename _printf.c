@@ -31,8 +31,12 @@ int _printf(const char *format, ...)
 		}
 		else if (format[index + 1] == '%')
 		{
-			_putchar(*format);
+			_putchar('%');
 			index++;
+		}
+		else
+		{
+			_putchar(*format);
 		}
 		rv++;
 	}
