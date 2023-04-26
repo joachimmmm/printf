@@ -12,6 +12,6 @@ int _putstr(char *str);
 
 int _printf(const char *format, ...);
 
-int (*check_specifier(char*))(va_list)
+int (check_specifier(char*))(va_list)
 
 #endif
