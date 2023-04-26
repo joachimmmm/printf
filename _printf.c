@@ -30,12 +30,11 @@ int _printf(const char *format, ...)
 		else if (format[index + 1] == 's')
 		{
 			s_rv = _putstr(va_arg(newlist, char *));
-			rv += (s_rv - 1);
 			index++;
+			rv += (s_rv - 1);
 		}
 		else if (format[index + 1] == '%')
 		{
-			_putchar('%');
 			index++;
 		}
 		else
