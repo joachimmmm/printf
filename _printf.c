@@ -31,7 +31,7 @@ int _printf(const char *format, ...)
 		{
 			s_rv = _putstr(va_arg(newlist, char *));
 			index++;
-			rv += (s_rv - 1);
+			rv += s_rv - 1;
 		}
 		else if (format && format[index + 1] == '%')
 		{
