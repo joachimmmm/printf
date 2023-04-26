@@ -5,7 +5,7 @@
  * Return: pointer to function
  */
 
-int (check_specifier( char *format))(va_list)
+int (*check_specifier( char *format))(va_list)
 {
 	int i;
 

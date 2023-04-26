@@ -12,6 +12,17 @@ int _putstr(char *str);
 
 int _printf(const char *format, ...);
 
-int (check_specifier(char *format))(va_list)
+int (*check_specifier(char *format))(va_list)
+
+/**
+ * struct func - struct for specifier to printer
+ * @t : character to compare
+ * @f: function to handle printing
+ */
+typedef struct func
+{
+	char *t;
+	int (*f)(va_list);
+}func_t;
 
 #endif
