@@ -12,6 +12,4 @@ int _putstr(char *str);
 
 int _printf(const char *format, ...);
 
-int put_s(char *string)
-
 #endif
