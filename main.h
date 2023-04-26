@@ -12,8 +12,6 @@ int _putstr(char *str);
 
 int _printf(const char *format, ...);
 
-int (*check_specifier(char *format))(va_list)
-
 /**
  * struct func - struct for specifier to printer
  * @t : character to compare
