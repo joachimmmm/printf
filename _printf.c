@@ -11,8 +11,12 @@ int _printf(const char *format, ...)
 	int s_rv = 0;
 	va_list newlist;
 
+	if (format == NULL)
+	{
+		return (-1);
+	}
 	va_start(newlist, format);
-	for (index = 0; format[index] != '\0'; index++)
+	for (index = 0; format && format[index] != '\0'; index++)
 	{
 		if (format[index] != '%')
 		{
@@ -26,10 +30,10 @@ int _printf(const char *format, ...)
 		else if (format[index + 1] == 's')
 		{
 			s_rv = _putstr(va_arg(newlist, char *));
-			rv += (s_rv - 1);
 			index++;
+			rv += s_rv - 1;
 		}
-		else if (format[index + 1] == '%')
+		else if (format && format[index + 1] == '%')
 		{
 			_putchar('%');
 			index++;
