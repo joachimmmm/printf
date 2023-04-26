@@ -12,4 +12,6 @@ void print_buffer(char buffer[], int *buffer_index);
 
 void _printf(const char *format, ...);
 
+int (check_specifier(char *format))(va_list)
+
 #endif
