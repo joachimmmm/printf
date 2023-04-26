@@ -38,11 +38,6 @@ int _printf(const char *format, ...)
 			_putchar('%');
 			index++;
 		}
-		else if (format[index +1] == 'd')
-		{
-			_putchar(va_args(newlist, int);
-				index++
-		}
 		else
 		{
 			_putchar(*format);
